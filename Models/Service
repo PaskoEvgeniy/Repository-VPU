@@ -1,0 +1,26 @@
+namespace HomaWork3.Models;
+
+public interface IMovable
+{
+    public double Speed { get; set; }
+    public void Movement();
+}
+
+public class Human : IMovable
+{
+    public double Speed { get; set; }
+    public void Movement()
+    {
+       Console.WriteLine("Humen Movement");
+}
+    public string? Name {get;set;}
+
+}
+public class Avto : IMovable
+{
+    public double Speed { get; set; }
+    public void Movement() {
+        Console.WriteLine("Avto Movement");
+        }
+    public string? Model{get;set;}
+}
